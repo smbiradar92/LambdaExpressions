@@ -47,6 +47,17 @@ public class ListIteration {
 				System.out.println(t);
 			}
 		});
+
+		System.out.println(
+				"------------printing elements with  Sysout-----------");
+		Consumer<Integer> myConsumer2 = System.out::println;
+		li.myList.forEach(myConsumer2);
+
+		System.out.println(
+				"------------printing elements with Lambda exp-----------");
+
+		li.myList.forEach(x -> System.out.println(x));
+
 	}
 
 }
